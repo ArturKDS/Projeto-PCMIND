@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #194B32;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    color: #1c1c1c;
+    margin: 0; 
+}
+
+.top-bar {
+    width: 100%;
+    background-color: #D0E4AE;
+    padding: 10px 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.top-bar .logo {
+    width: 70px; 
+    height: 60px;
+    border-radius: 20%;
+    overflow: hidden;
+}
+
+.top-bar .logo img {
+    width: 100%;
+    height: auto;
+}
+
+.top-bar .left-buttons,
+.top-bar .right-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar .left-buttons {
+    margin-left: 70px; 
+    flex-direction: row;
+}
+
+.top-bar .right-buttons {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.top-bar button {
+    cursor: pointer;
+    padding: 6px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.top-bar .left-buttons button {
+    border: 2px solid #fff;
+    background-color: #194B32;
+    color: #D0E4AE;
+}
+
+.top-bar .left-buttons button:hover {
+    background-color: #D0E4AE;
+    color: #194B32;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.top-bar .right-buttons button {
+    border: 2px solid #194B32; 
+    background-color: #fff; 
+    color: #194B32; 
+}
+
+.top-bar .right-buttons button:hover {
+    background-color: #194B32; 
+    color: #fff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    padding: 120px 20px 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.content h2 {
+    color: #fff; 
+    margin-bottom: 15px;
+}
+
+.test-box {
+    margin-top: 50px;
+    padding: 20px; 
+    border: 2px solid #194B32;
+    background-color: #D0E4AE;
+    color: #194B32;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    text-align: center;
+    width: 200px; 
+    height: 150px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 20px; 
+    top: 100px; 
+}
+
+.test-box:hover {
+    background-color: #fff; 
+    color: #194B32;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.test-icon {
+    width: 75px; 
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.test-box p {
+    margin: 0;
+    font-size: 20px; 
+    font-weight: bold;
+}
+
+.right-buttons p {
+    display: inline-block;
+    margin-right: 10px;
+    color: #1c1c1c; 
+}
+
+
+.user-info {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    max-height: 100px; 
+}
+
+.username {
+    color: #000000; 
+    margin-bottom: 5px; 
+    font-weight: bold;
+}
+
+.user-icon {
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin: 0px;
+    cursor: pointer;
+    border: 4px solid #000; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.dropdown-menu {
+    min-width: 150px;
+}
+
+.dropdown-item-text {
+    color: #000;
+}
+
+.dropdown-item:hover {
+    background-color: #D0E4AE;
+    color: #194B32;
+}
+
+.btn-custom {
+    background-color: #D0E4AE; 
+    color: #194B32; 
+    border: none; 
+    border-radius: 5px; 
+    font-weight: bold; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.btn-custom:hover {
+    background-color: #194B32; 
+    color: #D0E4AE; 
+}
+
+.content {
+    padding: 120px 20px 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.toggle-container {
+    background-color: #D0E4AE;
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.form-check-input:checked {
+    background-color: #194B32; 
+}
